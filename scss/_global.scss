@@ -11,9 +11,14 @@ html{
     box-sizing: inherit;
 }
 
+$boxing:(
+    margin: 0,
+    padding: 0
+);
+
 body{
-    margin:0;
-    padding:0;
+    margin: map-get($boxing,margin);
+    padding: map-get($boxing, padding);
     line-height: 1.6;
     font-family: 'Noto Sans JP', sans-serif;
     background: linear-gradient(to right, skyblue, white);
